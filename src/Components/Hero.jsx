@@ -24,7 +24,7 @@ export default function Hero() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
 
   return (
-    <div className="relative bg-[#fef3c7] z-[1]">
+    <div className="relative bg-[#fef3c7]">
       <header className="absolute inset-x-0 top-0 z-50">
         <nav aria-label="Global" className="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8">
           <div className="flex lg:flex-1">
@@ -101,7 +101,7 @@ export default function Hero() {
         </Dialog>
       </header>
       {/* Triangle background */}
-      <div className='absolute z-[1] inset-0 bg-[#fffced] w-full h-full' style={{ clipPath: 'polygon(0 0, 100% 0, 100% 20%, 0 100%)' }}></div>
+      <div className='absolute  inset-0 bg-[#fffced] w-full h-full' style={{ clipPath: 'polygon(0 0, 100% 0, 100% 20%, 0 100%)' }}></div>
       {/* Main content */}
       <main className='flex relative flex-col items-center justify-evenly h-full min-h-screen z-20 pt-20'>
         <div className='flex flex-col items-center justify-center sm:flex-row sm:gap-4 sm:px-4 h-full'>
@@ -124,7 +124,7 @@ export default function Hero() {
         </div>
         <div className='flex flex-col items-center justify- sm:flex-row sm:gap-4 sm:px-4 h-full '>
         {features.map((feature) => (
-          <div className='flex flex-col items-center justify-center gap-4 z-10 max-w-xl p-4'>
+          <div className='flex flex-col items-center justify-center gap-4 max-w-xl p-4'>
             <img src={feature.icon} alt='icon' className='h-16 w-16' />
             <h2 className='text-xl font-bold'>{feature.title}</h2>
             <p className='text-lg font-medium'>{feature.description}</p>
