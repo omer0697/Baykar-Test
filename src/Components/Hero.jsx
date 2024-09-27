@@ -103,7 +103,7 @@ export default function Hero() {
       {/* Triangle background */}
       <div className='absolute  inset-0 bg-[#fffced] w-full h-full' style={{ clipPath: 'polygon(0 0, 100% 0, 100% 20%, 0 100%)' }}></div>
       {/* Main content */}
-      <main className='flex relative flex-col items-center justify-evenly h-full min-h-screen z-20 pt-20'>
+      <main className='flex relative flex-col items-center justify-evenly h-full min-h-screen z-20 pt-28 px-12 sm:pt-20'>
         <div className='flex flex-col items-center justify-center sm:flex-row sm:gap-4 sm:px-4 h-full'>
           <div className='flex flex-col gap-4 items-center justify-center sm:items-start sm:gap-8 sm:text-left'>
             <h1 className="max-w-2xl text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl lg:col-span-2 xl:col-auto">
@@ -120,9 +120,9 @@ export default function Hero() {
               </button>
             </div>
           </div>
-          <img src={Nike} alt='nike' className='px-4' />
+          <img src={Nike} alt='nike' className='pt-24 sm:pt-0 sm:px-4' />
         </div>
-        <div className='flex flex-col items-center justify- sm:flex-row sm:gap-4 sm:px-4 h-full '>
+        <div className='flex flex-col gap-4 pb-20 items-center justify- sm:flex-row sm:gap-4 sm:px-4 h-full '>
         {features.map((feature) => (
           <div className='flex flex-col items-center justify-center gap-4 max-w-xl p-4'>
             <img src={feature.icon} alt='icon' className='h-16 w-16' />

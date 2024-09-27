@@ -142,7 +142,7 @@ function Slider() {
       {/* Title with buttons */}
       <div className="flex justify-between items-center w-full lg:px-16 px-6 mb-6">
         <h1 className="text-4xl font-bold z-10 pb-10">Because they love us</h1>
-        <div className="flex space-x-4 z-10">
+        <div className=" space-x-4 z-10 hidden sm:flex">
           <ArrowLeftOutlined className="text-lg text-gray-500 cursor-pointer rounded-full border-red-600 border-2 p-2" 
             onClick={scrollToLeft}
             />

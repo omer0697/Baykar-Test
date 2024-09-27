@@ -4,9 +4,9 @@ import photo1 from '../photos/JoinUs/1.png';
 function JoinUs() {
   return (
     <div className="bg-[#fffdf3] w-full h-full flex justify-center py-24">
-      <div className="relative bg-white rounded-lg shadow-lg p-8 w-full mx-40 flex items-center space-x-8 flex-col sm:flex-row">
+      <div className="relative bg-white rounded-lg shadow-lg p-8 w-full sm:mx-40 flex items-center space-x-8 flex-col sm:flex-row">
         {/* Text Section */}
-        <div className="flex-1">
+        <div className="flex-1 flex flex-col items-center h-1/4">
           <h1 className="text-4xl font-bold mb-4">Why join us</h1>
           <ul className="space-y-2">
             <li className="flex items-start">
@@ -28,7 +28,7 @@ function JoinUs() {
         </div>
 
         {/* Video Section */}
-        <div className="relative flex-1 z-10 ">
+        <div className="relative flex-1 z-10 mt-40 sm:mt-0">
           <div className="h-fit">
             <img
               src={photo1}
@@ -39,7 +39,7 @@ function JoinUs() {
         </div>
 
         {/* Background Shapes */}
-        <div className="absolute right-[16rem] z-0 -top-20 rotate-45 bg-[#FDE68A] h-[48rem] w-44 "></div>
+        <div className="absolute right-[16rem] z-0 sm:-top-20 rotate-45 bg-[#FDE68A] sm:mt-0 mt-52 h-[48rem] w-32 sm:w-44 "></div>
       </div>
     </div>
   );

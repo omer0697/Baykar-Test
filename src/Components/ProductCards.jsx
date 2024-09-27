@@ -35,18 +35,18 @@ const ProductCards = () => {
     ];
   
     return (
-      <div className="bg-gray-900 py-12 text-white px-20 ">
-        <div className="text-center mb-8 flex justify-between items-center">
-          <h2 className="text-4xl font-bold">The best of the best</h2>
+      <div className="bg-gray-900  text-white px-4 sm:px-20 py-10 sm:py-12 ">
+        <div className="text-center mb-8 flex justify-between gap-2 items-center flex-col sm:flex-row">
+          <h2 className="text-2xl font-bold sm:text-4xl">The best of the best</h2>
           <button className="mt-4 bg-transparent border border-white text-white py-2 px-6 rounded-lg hover:bg-white hover:text-gray-900 transition duration-300">
             Sign up now
           </button>
         </div>
   
         {/* Product Card Section */}
-        <div className="flex gap-20 w-full justify-between items-center">
+        <div className="flex gap-5 w-full justify-between items-center flex-col sm:gap-20 sm:flex-row">
           {products.map((product) => (
-            <div className="relative flex p-4  ">
+            <div className="relative flex sm:p-4">
               <div className={`absolute ${product.shape1} ${product.positionAndSize1}`}></div>
               <div className={`absolute ${product.shape2} ${product.positionAndSize2}`}></div>
               <div key={product.id} className="bg-gray-800 p-8 rounded-lg relative z-50">
